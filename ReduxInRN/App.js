@@ -9,6 +9,10 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import { Provider } from 'react-redux';
+import ToDoApp from './src/ToDoApp'
+import store from './src/store'
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -21,6 +25,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+      <Provider store = {store}>
+        <ToDoApp />
+      </Provider>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
