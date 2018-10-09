@@ -6,7 +6,6 @@ import {connect} from 'react-redux'
 import styles from './styles/AddSessionStyles'
 import {addSession} from '../actions'
 
-
 class AddSession extends Component {
 
   constructor() {
