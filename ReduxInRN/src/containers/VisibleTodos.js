@@ -1,13 +1,13 @@
 import {connect} from 'react-redux'
-import ToDoList from '../components/ToDoList'
-import {toggleTodo} from '../actions'
+import SessionList from '../components/SessionList'
+import {toggleSession} from '../actions'
 
 const mapStateToProps = state => ({
-  todos: state.todos
+  sessions: state.sessions
 })
 
 const mapDispatchToProps = dispatch => ({
-  toggleTodo: id => dispatch(toggleTodo(id))
+  toggleSession: id => dispatch(toggleSession(id))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(ToDoList)
+export default connect(mapStateToProps, mapDispatchToProps)(SessionList)

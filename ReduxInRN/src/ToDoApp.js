@@ -1,14 +1,14 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import AddToDoList from './containers/AddToDoList'
+import AddSession from './containers/AddSession'
 import VisibleTodos from './containers/VisibleTodos'
 
 export default class ToDoApp extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <AddToDoList />
+        <AddSession/>
         <View>
           <VisibleTodos />
         </View>

@@ -2,19 +2,19 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
-const ToDoList = ({ todos, toggleTodo }) => (
+const SessionList = ({ sessions, toggleSession }) => (
   <View>
-    {todos.map(todo =>
-      <TouchableOpacity key={todo.id} onPress={()=>toggleTodo(todo.id)}>
+    {sessions.map(session =>
+      <TouchableOpacity key={session.id} onPress={()=>toggleSession(session.id)}>
         <Text style={{fontSize:24,
-          textDecorationLine: todo.completed ? 'line-through' : 'none'
-        }}>{todo.text}</Text>
+          textDecorationLine: session.completed ? 'line-through' : 'none'
+        }}>{session.text}</Text>
       </TouchableOpacity>
     )}
     </View>
 )
 
-export default ToDoList
+export default SessionList
 
 const styles = StyleSheet.create({
   container: {

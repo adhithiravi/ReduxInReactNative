@@ -1,2 +1,2 @@
-export const ADD_TODO = 'ADD_TODO'
-export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const ADD_SESSION = 'ADD_SESSION'
+export const TOGGLE_SESSION = 'TOGGLE_SESSION'
