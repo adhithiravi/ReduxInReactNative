@@ -22,7 +22,7 @@ class AddSession extends Component {
 
   render() {
     return (
-      <View style={{flexDirection: 'row'}}>
+      <View style={styles.container}>
           <TextInput
             placeholder = 'Add New Session Here'
             style= {styles.textInput}
@@ -31,7 +31,7 @@ class AddSession extends Component {
           />
           <TouchableOpacity onPress={()=> this.addSession(this.state.text)}>
             <View style={styles.iconWrapper}>
-              <Text>Add</Text>
+              <Text style={styles.addText}>Add</Text>
             </View>
           </TouchableOpacity>
       </View>

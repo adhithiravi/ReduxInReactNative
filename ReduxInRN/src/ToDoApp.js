@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import AddSession from './containers/AddSession'
-import VisibleTodos from './containers/VisibleTodos'
+import VisibleSessions from './containers/VisibleSessions'
 
 export default class ToDoApp extends Component<Props> {
   render() {
@@ -10,7 +10,7 @@ export default class ToDoApp extends Component<Props> {
       <View style={styles.container}>
         <AddSession/>
         <View>
-          <VisibleTodos />
+          <VisibleSessions />
         </View>
       </View>
     );
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F0FFFF',
   }
 });

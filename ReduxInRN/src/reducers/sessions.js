@@ -13,9 +13,9 @@ const sessions = (state=[], action) => {
         ]
 
       case 'TOGGLE_SESSION':
-        return state.map(todo =>
-          (todo.id === action.id)
-            ? { ... todo, completed: !todo.completed } : todo)
+        return state.map(session =>
+          (session.id === action.id)
+            ? { ... session, completed: !session.completed } : session)
 
       default:
         return state
